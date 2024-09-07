@@ -21,5 +21,13 @@ func ConvertLength(value float64, fromUnit string, toUnit string) float64 {
 		return value
 	}
 
+	// --- set unit value
+	fromUnitValue := LengthUnits[fromUnit]
+	toUnitValue := LengthUnits[toUnit]
+
+	// --- calc
+	fromValueInMeter := value * fromUnitValue
+	result = int(fromValueInMeter) / int(toUnitValue)
+
 	return float64(result)
 }

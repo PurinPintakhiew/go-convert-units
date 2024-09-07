@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	calc := ConvertLength(100, "", "")
+	calc := ConvertLength(1, "meter", "kilometer")
 
 	fmt.Print(calc)
 }
