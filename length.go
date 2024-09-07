@@ -1,6 +1,8 @@
 package main
 
-var LengthUnits = map[string]float64{
+import "fmt"
+
+var lengthUnits = map[string]float64{
 	"kilometer":  1000,
 	"hectometer": 100,
 	"decameter":  10,
@@ -15,19 +17,17 @@ var LengthUnits = map[string]float64{
 }
 
 func ConvertLength(value float64, fromUnit string, toUnit string) float64 {
-	result := 0
+	fromUnitValue, fromExists := lengthUnits[fromUnit]
+	toUnitValue, toExists := lengthUnits[toUnit]
 
-	if fromUnit == "" || toUnit == "" {
-		return value
+	if !fromExists || !toExists {
+		fmt.Printf("Invalid units: %s or %s\n", fromUnit, toUnit)
+		return 0
 	}
-
-	// --- set unit value
-	fromUnitValue := LengthUnits[fromUnit]
-	toUnitValue := LengthUnits[toUnit]
 
 	// --- calc
 	fromValueInMeter := value * fromUnitValue
-	result = int(fromValueInMeter) / int(toUnitValue)
+	result := fromValueInMeter / toUnitValue
 
-	return float64(result)
+	return result
 }
