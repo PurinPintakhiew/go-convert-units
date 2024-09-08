@@ -28,8 +28,4 @@ func main() {
 	calcTemp := convertunits.ConvertTemperature(0, "celsius", "fahrenheit")
 	fmt.Printf("temp: %f\n", calcTemp) // temp: 32
 }
-
-
-}
-
 ```
