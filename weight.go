@@ -3,16 +3,16 @@ package convertunits
 import "fmt"
 
 var weightUnits = map[string]float64{
-	"gigatonne": 1000000000000000,
-	"megatonne": 1000000000000,
-	"tonne":     1000000,
+	"gigatonne": 1e15,
+	"megatonne": 1e12,
+	"tonne":     1e6,
 	"kilogram":  1000,
 	"pound":     453.592,
 	"gram":      1,
 	"milligram": 0.001,
-	"microgram": 0.000001,
-	"nanogram":  0.000000001,
-	"picogram":  0.000000000001,
+	"microgram": 1e-6,
+	"nanogram":  1e-9,
+	"picogram":  1e-12,
 }
 
 // ConvertWeight converts the given weight from one unit to another
