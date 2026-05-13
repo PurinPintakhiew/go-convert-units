@@ -1,3 +1,3 @@
-module github.com/SaimCore/convert-units-go
+module github.com/SiamCore/convert-units-go
 
-go 1.25.1
+go 1.26.3
