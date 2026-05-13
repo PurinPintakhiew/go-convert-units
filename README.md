@@ -1,7 +1,9 @@
 # convert-units-go ✨
 convert-units-go is a Go package designed to simplify conversions between units of measurement, including weight, length, and temperature. It provides a user-friendly interface for developers to convert values ​​between different units.
 
-[![Go Report Card](https://goreportcard.com/badge/SiamCore/convert-units-go)](https://goreportcard.com/report/SiamCore/convert-units-go) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/SiamCore/convert-units-go/blob/main/LICENSE)
+[![GoDoc](https://godoc.org/github.com/SiamCore/convert-units-go?status.svg)](https://godoc.org/github.com/SiamCore/convert-units-go)
+[![Go Report Card](https://goreportcard.com/badge/SiamCore/convert-units-go)](https://goreportcard.com/report/SiamCore/convert-units-go)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/SiamCore/convert-units-go/blob/main/LICENSE)
 
 
 ## Install 🛠️
